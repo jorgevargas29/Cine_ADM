@@ -1,0 +1,10 @@
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\bin\Debug\Cine_Adm.exe.config
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\bin\Debug\Cine_Adm.exe
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\bin\Debug\Cine_Adm.pdb
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.csprojResolveAssemblyReference.cache
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.cine_controller.resources
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.Properties.Resources.resources
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.csproj.GenerateResource.Cache
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.exe
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.pdb
+C:\Users\Jorge\Desktop\Progra2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.Form2.resources
