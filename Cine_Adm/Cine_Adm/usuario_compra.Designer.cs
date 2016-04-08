@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usuario_compra));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pBox1 = new System.Windows.Forms.PictureBox();
+            this.pBox2 = new System.Windows.Forms.PictureBox();
+            this.pBox3 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -115,39 +116,41 @@
             this.button150 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pBox1
             // 
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 275);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pBox1.ErrorImage = null;
+            this.pBox1.Location = new System.Drawing.Point(70, 13);
+            this.pBox1.Name = "pBox1";
+            this.pBox1.Size = new System.Drawing.Size(219, 275);
+            this.pBox1.TabIndex = 0;
+            this.pBox1.TabStop = false;
+            this.pBox1.Click += new System.EventHandler(this.pBox1_Click);
             // 
-            // pictureBox2
+            // pBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(382, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(219, 275);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pBox2.Location = new System.Drawing.Point(382, 13);
+            this.pBox2.Name = "pBox2";
+            this.pBox2.Size = new System.Drawing.Size(219, 275);
+            this.pBox2.TabIndex = 1;
+            this.pBox2.TabStop = false;
             // 
-            // pictureBox3
+            // pBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(699, 13);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(219, 275);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.pBox3.Location = new System.Drawing.Point(699, 13);
+            this.pBox3.Name = "pBox3";
+            this.pBox3.Size = new System.Drawing.Size(219, 275);
+            this.pBox3.TabIndex = 2;
+            this.pBox3.TabStop = false;
             // 
             // comboBox1
             // 
@@ -1044,6 +1047,12 @@
             this.button1.Text = "Comprar";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // usuario_compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1057,17 +1066,18 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pBox3);
+            this.Controls.Add(this.pBox2);
+            this.Controls.Add(this.pBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "usuario_compra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Load += new System.EventHandler(this.usuario_compra_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -1079,9 +1089,9 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pBox1;
+        private System.Windows.Forms.PictureBox pBox2;
+        private System.Windows.Forms.PictureBox pBox3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -1165,5 +1175,6 @@
         private System.Windows.Forms.Button button150;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

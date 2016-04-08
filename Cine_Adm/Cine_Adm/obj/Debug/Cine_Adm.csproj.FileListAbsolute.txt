@@ -18,3 +18,15 @@ C:\Users\Jorge\Desktop\Progra2\Proyecto2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.ci
 C:\Users\Jorge\Desktop\Progra2\Proyecto2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.usuarios.resources
 C:\Users\Jorge\Desktop\Progra2\Proyecto2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.Properties.Resources.resources
 C:\Users\Jorge\Desktop\Progra2\Proyecto2\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\bin\Debug\Cine_Adm.exe.config
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.exe
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.pdb
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\bin\Debug\Cine_Adm.exe
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\bin\Debug\Cine_Adm.pdb
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.PeliculaAgr.resources
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.cine_controller.resources
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.usuarios.resources
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.Properties.Resources.resources
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.usuario_compra.resources
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.csproj.GenerateResource.Cache
