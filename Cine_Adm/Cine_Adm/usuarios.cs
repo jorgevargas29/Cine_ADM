@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cine_Adm
 {
-    public partial class Form2 : Form
+    public partial class usuarios : Form
     {
-        public Form2()
+        public usuarios()
         {
             InitializeComponent();
         }

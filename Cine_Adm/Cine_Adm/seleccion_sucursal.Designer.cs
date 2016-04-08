@@ -32,11 +32,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.salir_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(307, 117);
+            this.button1.Location = new System.Drawing.Point(422, 117);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -62,6 +63,15 @@
             this.comboBox1.TabIndex = 5;
             this.comboBox1.Text = "Seleccione Sucursal";
             // 
+            // salir_btn
+            // 
+            this.salir_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("salir_btn.BackgroundImage")));
+            this.salir_btn.Location = new System.Drawing.Point(524, 387);
+            this.salir_btn.Name = "salir_btn";
+            this.salir_btn.Size = new System.Drawing.Size(64, 64);
+            this.salir_btn.TabIndex = 6;
+            this.salir_btn.UseVisualStyleBackColor = true;
+            // 
             // cine_controller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -69,11 +79,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(600, 463);
+            this.Controls.Add(this.salir_btn);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.IsMdiContainer = true;
             this.Name = "cine_controller";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.cine_controller_Load);
@@ -87,6 +97,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button salir_btn;
     }
 }
 

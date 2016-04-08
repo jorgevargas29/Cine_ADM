@@ -1,6 +1,6 @@
 ﻿namespace Cine_Adm
 {
-    partial class Form2
+    partial class usuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usuarios));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.salir_btn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -94,12 +96,33 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Usuario";
             // 
-            // Form2
+            // salir_btn
+            // 
+            this.salir_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("salir_btn.BackgroundImage")));
+            this.salir_btn.Location = new System.Drawing.Point(524, 387);
+            this.salir_btn.Name = "salir_btn";
+            this.salir_btn.Size = new System.Drawing.Size(64, 64);
+            this.salir_btn.TabIndex = 7;
+            this.salir_btn.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(537, 368);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 16);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Salir";
+            // 
+            // usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(584, 424);
+            this.ClientSize = new System.Drawing.Size(600, 463);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.salir_btn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -107,7 +130,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "usuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cine Melrose - Seleccion de Usuario";
             this.ResumeLayout(false);
@@ -123,5 +146,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button salir_btn;
+        private System.Windows.Forms.Label label4;
     }
 }
