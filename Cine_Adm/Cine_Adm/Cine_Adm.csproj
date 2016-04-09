@@ -56,6 +56,12 @@
     <Compile Include="PeliculaAgr.Designer.cs">
       <DependentUpon>PeliculaAgr.cs</DependentUpon>
     </Compile>
+    <Compile Include="trabajador_agr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trabajador_agr.Designer.cs">
+      <DependentUpon>trabajador_agr.cs</DependentUpon>
+    </Compile>
     <Compile Include="usuario_compra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,11 +82,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="venta_boletos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="venta_boletos.Designer.cs">
+      <DependentUpon>venta_boletos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="PeliculaAgr.resx">
       <DependentUpon>PeliculaAgr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="seleccion_sucursal.resx">
       <DependentUpon>seleccion_sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trabajador_agr.resx">
+      <DependentUpon>trabajador_agr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>
@@ -97,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="usuario_compra.resx">
       <DependentUpon>usuario_compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="venta_boletos.resx">
+      <DependentUpon>venta_boletos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
