@@ -48,6 +48,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +79,7 @@
             // 
             // bGuardar
             // 
-            this.bGuardar.Location = new System.Drawing.Point(489, 361);
+            this.bGuardar.Location = new System.Drawing.Point(428, 346);
             this.bGuardar.Name = "bGuardar";
             this.bGuardar.Size = new System.Drawing.Size(75, 23);
             this.bGuardar.TabIndex = 36;
@@ -88,7 +89,7 @@
             // 
             // bExaminar
             // 
-            this.bExaminar.Location = new System.Drawing.Point(489, 332);
+            this.bExaminar.Location = new System.Drawing.Point(428, 317);
             this.bExaminar.Name = "bExaminar";
             this.bExaminar.Size = new System.Drawing.Size(75, 23);
             this.bExaminar.TabIndex = 35;
@@ -217,11 +218,23 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 20;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(509, 317);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 40;
+            this.button3.Text = "Modificar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // PeliculaAgr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 675);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label8);
@@ -274,5 +287,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button3;
     }
 }

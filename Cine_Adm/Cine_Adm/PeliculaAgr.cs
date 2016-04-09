@@ -14,17 +14,15 @@ namespace Cine_Adm
 {
     public partial class PeliculaAgr : Form
     {
-        public PeliculaAgr()
-        {
-            InitializeComponent();
-        }
-
-        private void PeliculaAgr_Load(object sender, EventArgs e)
-        {
-            string sql;
+        
+        string selec;
             string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
-            DataTable dt = new DataTable();
-            sql = "select " +
+            DataTable dt;
+         SqlConnection sqlconn;
+         SqlDataAdapter sqlda;
+         SqlCommand sqlcomm;
+
+           string sql = "select " +
                 "ID_PELICULA" + " as 'Cod.Pelicula' , " +
                  "PL_TITULO" + " as Titulo, " +
                  "PL_IDIOMA" + " as Idioma, " +
@@ -35,10 +33,23 @@ namespace Cine_Adm
                  "PL_DIRECTOR" + " as Director, " +
                  "PL_IMAGEN" + " as Posters" +
                  " from " + "PELICULA";
-            SqlConnection sqlconn = new SqlConnection(conexion);
-            sqlconn.Open();//abre conexion
 
-            SqlDataAdapter sqlda = new SqlDataAdapter(sql, sqlconn);
+
+
+          
+        public PeliculaAgr()
+        {
+            InitializeComponent();
+        }
+
+        private void PeliculaAgr_Load(object sender, EventArgs e)
+        {
+            
+             dt = new DataTable();
+             selec = sql; 
+             sqlconn = new SqlConnection(conexion);
+            sqlconn.Open();
+            sqlda = new SqlDataAdapter(sql, sqlconn);
             sqlda.Fill(dt);
             sqlconn.Close();
             dataGridView1.DataSource = dt;
@@ -58,7 +69,7 @@ namespace Cine_Adm
         {
             try
             {
-                System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(@"Data Source=(local);Initial Catalog=CINE;Integrated Security=SSPI");
+                System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(conexion);
                 System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
 
                 // Estableciento propiedades
@@ -117,6 +128,41 @@ namespace Cine_Adm
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            sqlconn.Open();
+            sqlcomm = new SqlCommand();
+            string sql;
+            DataTable dt = new DataTable();
+            System.IO.MemoryStream ms = new System.IO.MemoryStream();
+            sql = "update" + 
+                "PELICULA"+
+                "set"+
+                "PL_TITULO  = '" + textBox2.Text + "', " +
+            "PL_IDIOMA = '" + textBox3.Text + "', " +
+            "PL_CLASIFICACION = '" + textBox8.Text + "'," +
+            "PL_DURACION = '" + textBox6.Text + "'," +
+            "PL_GENERO = '" + textBox4.Text + "'," +
+            "PL_SINOPSIS = '" + textBox7.Text + "'," +
+            "PL_DIRECTOR = '" + textBox5.Text + "'," +
+            "PL_IMAGEN = '" + ms.GetBuffer() + "'" +
+
+            " where ID_PELICULA = " + textBox1.Text;
+            sqlcomm.Connection = sqlconn;
+            sqlcomm.CommandText = sql;
+            sqlcomm.CommandType = CommandType.Text;
+            sqlcomm.ExecuteNonQuery();
+            sqlconn.Close();
+            sql = selec;
+            sqlconn.Open();
+            sqlda = new SqlDataAdapter(sql, sqlconn);
+            sqlda.Fill(dt);
+            sqlconn.Close();
+            dataGridView1.DataSource = dt;
+
+
         }
 
     }

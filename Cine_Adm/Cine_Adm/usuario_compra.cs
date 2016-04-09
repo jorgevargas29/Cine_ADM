@@ -18,51 +18,51 @@ namespace Cine_Adm
         public usuario_compra()
         {
             InitializeComponent();
-            cargarImage();
+            //cargarImage();
         }
 
-        Image convertbinaryToimage(byte[] data)
-        {
-            string sql;
-            string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
-            using (MemoryStream ms = new MemoryStream(data))
-            {
-                return Image.FromStream(ms);
+        //Image convertbinaryToimage(byte[] data)
+        //{
+        //    string sql;
+        //    string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
+        //    using (MemoryStream ms = new MemoryStream(data))
+        //    {
+        //        return Image.FromStream(ms);
 
-            }
-        }
+        //    }
+        //}
 
-        private void cargarImage()
-        {
-            string sql;
-            string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
+        //private void cargarImage()
+        //{
+        //    string sql;
+        //    string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
            
-            SqlCommand sqlcomm;
-            SqlConnection sqlconn=new SqlConnection(conexion);
-            sql = "select " + " PL_IMAGEN " +
-                 " from " + "PELICULA";
-            sqlcomm = new SqlCommand(sql,sqlconn);
+        //    SqlCommand sqlcomm;
+        //    SqlConnection sqlconn=new SqlConnection(conexion);
+        //    sql = "select " + " PL_IMAGEN " +
+        //         " from " + "PELICULA";
+        //    sqlcomm = new SqlCommand(sql,sqlconn);
             
-            SqlDataAdapter sqlda = new SqlDataAdapter(sqlcomm);
-            DataTable dt = new DataTable();
+        //    SqlDataAdapter sqlda = new SqlDataAdapter(sqlcomm);
+        //    DataTable dt = new DataTable();
            
-            sqlda.Fill(dt);
+        //    sqlda.Fill(dt);
 
 
 
-            byte[] img = (byte[])dt.Rows[0][4];
-            using (MemoryStream ms = new MemoryStream(img))
-            {
-                Image.FromStream(ms);
-                pBox1.Image = Image.FromStream(ms);
+        //    byte[] img = (byte[])dt.Rows[0][4];
+        //    using (MemoryStream ms = new MemoryStream(img))
+        //    {
+        //        Image.FromStream(ms);
+        //        pBox1.Image = Image.FromStream(ms);
 
-            }
-            //MemoryStream ms = new MemoryStream(Convert.ToString(img));
+        //    }
+        //    //MemoryStream ms = new MemoryStream(Convert.ToString(img));
            
-            ////pBox2.Image = Image.FromStream(ms);
-            ////pBox3.Image = Image.FromStream(ms);
+        //    ////pBox2.Image = Image.FromStream(ms);
+        //    ////pBox3.Image = Image.FromStream(ms);
 
-        }
+        //}
         private void usuario_compra_Load(object sender, EventArgs e)
         {
             string sql;
