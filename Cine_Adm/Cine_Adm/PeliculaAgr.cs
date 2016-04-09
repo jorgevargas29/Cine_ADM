@@ -30,8 +30,8 @@ namespace Cine_Adm
                  "PL_DURACION" + " as Duracion, " +
                  "PL_GENERO" + " as Genero, " +
                  "PL_SINOPSIS" + " as Sinopsis, " +
-                 "PL_DIRECTOR" + " as Director, " +
-                 "PL_IMAGEN" + " as Posters" +
+                 "PL_DIRECTOR" + " as Director," +
+                  "PL_IMAGEN" + " as Posters" +
                  " from " + "PELICULA";
 
 
@@ -53,6 +53,7 @@ namespace Cine_Adm
             sqlda.Fill(dt);
             sqlconn.Close();
             dataGridView1.DataSource = dt;
+            this.dataGridView1.Columns[8].Visible = false;
         }
 
         private void bExaminar_Click(object sender, EventArgs e)
@@ -123,6 +124,7 @@ namespace Cine_Adm
                 this.textBox7.Text = "";
                 this.textBox8.Text = "";
                 this.pictureBox1.Image = null;
+               
             }
             catch (System.Exception ex)
             {
