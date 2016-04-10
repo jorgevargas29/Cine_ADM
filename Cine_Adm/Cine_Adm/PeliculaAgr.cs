@@ -15,14 +15,14 @@ namespace Cine_Adm
     public partial class PeliculaAgr : Form
     {
         
-        string selec;
+        string sql;
             string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
             DataTable dt;
          SqlConnection sqlconn;
          SqlDataAdapter sqlda;
          SqlCommand sqlcomm;
 
-           string sql = "select " +
+           string selec = "select " +
                 "ID_PELICULA" + " as 'Cod.Pelicula' , " +
                  "PL_TITULO" + " as Titulo, " +
                  "PL_IDIOMA" + " as Idioma, " +
@@ -46,7 +46,7 @@ namespace Cine_Adm
         {
             
              dt = new DataTable();
-             selec = sql; 
+            sql=selec; 
              sqlconn = new SqlConnection(conexion);
             sqlconn.Open();
             sqlda = new SqlDataAdapter(sql, sqlconn);
@@ -55,7 +55,22 @@ namespace Cine_Adm
             dataGridView1.DataSource = dt;
             this.dataGridView1.Columns[8].Visible = false;
         }
+        public void VerImagen(PictureBox imagen, ComboBox comb)
+        {
+            SqlCommand com = new SqlCommand("select " + "PL_IMAGEN" +
+               " from " + "PELICULA" + " where " + "ID_PELICULA = '" + comb.SelectedValue.ToString() + "' ", sqlconn);
+            SqlDataAdapter sqda = new SqlDataAdapter(com);
+            DataSet set = new DataSet("PELICULA");
+            sqda.Fill(set, "PELICULA");
+            byte[] dato = new byte[0];
+            DataRow dr = set.Tables["PL_IMAGEN"].Rows[0];
 
+            dato = (byte[])dr["PL_IMAGEN"];
+
+            System.IO.MemoryStream ms = new System.IO.MemoryStream(dato);
+            imagen.Image = System.Drawing.Bitmap.FromStream(ms);
+
+        }
         private void bExaminar_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -123,7 +138,7 @@ namespace Cine_Adm
                 this.textBox6.Text = "";
                 this.textBox7.Text = "";
                 this.textBox8.Text = "";
-                this.pictureBox1.Image = null;
+              
                
             }
             catch (System.Exception ex)
@@ -138,7 +153,6 @@ namespace Cine_Adm
             sqlcomm = new SqlCommand();
             string sql;
             DataTable dt = new DataTable();
-            System.IO.MemoryStream ms = new System.IO.MemoryStream();
             sql = "update" + 
                 "PELICULA"+
                 "set"+
@@ -149,9 +163,9 @@ namespace Cine_Adm
             "PL_GENERO = '" + textBox4.Text + "'," +
             "PL_SINOPSIS = '" + textBox7.Text + "'," +
             "PL_DIRECTOR = '" + textBox5.Text + "'," +
-            "PL_IMAGEN = '" + ms.GetBuffer() + "'" +
+            "PL_IMAGEN = '" + pictureBox1 + "'" +
 
-            " where ID_PELICULA = " + textBox1.Text;
+            " where" +" ID_PELICULA = " + textBox1.Text;
             sqlcomm.Connection = sqlconn;
             sqlcomm.CommandText = sql;
             sqlcomm.CommandType = CommandType.Text;
@@ -165,6 +179,54 @@ namespace Cine_Adm
             dataGridView1.DataSource = dt;
 
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            sqlconn.Open();
+            sqlcomm = new SqlCommand();
+            string sql;
+            DataTable dt = new DataTable();
+            sql = selec +
+                " where" + " ID_PELICULA = " + textBox1.Text;
+            sqlcomm.Connection = sqlconn;
+            sqlcomm.CommandText = sql;
+            sqlcomm.CommandType = CommandType.Text;
+            sqlcomm.ExecuteNonQuery();
+            sqlda = new SqlDataAdapter(sql, sqlconn);
+            sqlda.Fill(dt);
+            sqlconn.Close();
+            textBox2.Text = dt.Rows[0][1].ToString();
+            textBox3.Text = dt.Rows[0][2].ToString();
+            textBox6.Text = dt.Rows[0][3].ToString();
+            textBox5.Text = dt.Rows[0][4].ToString();
+            textBox4.Text = dt.Rows[0][5].ToString();
+            textBox8.Text = dt.Rows[0][6].ToString();
+            textBox7.Text = dt.Rows[0][7].ToString();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            sqlconn.Open();
+            sqlcomm = new SqlCommand();
+            string sql;
+            DataTable dt = new DataTable();
+            sql = "delete from" +
+            " PELICULA " +
+            " where " +
+            "ID_PELICULA = " + textBox1.Text;
+            sqlcomm.Connection = sqlconn;
+            sqlcomm.CommandText = sql;
+            sqlcomm.CommandType = CommandType.Text;
+            sqlcomm.ExecuteNonQuery();
+            sqlconn.Close();
+            sql = selec;
+            sqlconn.Open();
+            sqlda = new SqlDataAdapter(sql, sqlconn);
+            sqlda.Fill(dt);
+            sqlconn.Close();
+            dataGridView1.DataSource = dt;
         }
 
     }

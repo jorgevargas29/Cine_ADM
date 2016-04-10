@@ -13,7 +13,7 @@ namespace Cine_Adm
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        static PeliculaAgr form1;
+        static trabajador_agr form1;
         [STAThread]
 
         static void Main(string[] args)
@@ -21,7 +21,7 @@ namespace Cine_Adm
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Thread thr = new Thread(ConsoleInputThreadProc);
-            form1 = new PeliculaAgr();
+            form1 = new trabajador_agr();
             thr.Start(form1);
             Application.Run( form1);
         }
