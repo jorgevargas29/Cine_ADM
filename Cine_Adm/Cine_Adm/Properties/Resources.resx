@@ -118,7 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dibujosdecineparaimprimir5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dibujosdecineparaimprimir5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="VbcFXzOy.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VbcFXzOy.jpg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grunge-circus-background-illustration_110725070" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grunge-circus-background-illustration_110725070.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="40557025-Garabatos-de-cine-iconos-conjunto-de-vectores-en-el-estilo-de-dibujo-Foto-de-archivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\40557025-Garabatos-de-cine-iconos-conjunto-de-vectores-en-el-estilo-de-dibujo-Foto-de-archivo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aqua-button_t" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aqua-button_t.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12953295_1049608631762635_850661204_o" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12953295_1049608631762635_850661204_o.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boleto-del-circo-en-el-fondo-del-resplandor-solar_62147501840" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boleto-del-circo-en-el-fondo-del-resplandor-solar_62147501840.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aqua-button_t1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aqua-button_t1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

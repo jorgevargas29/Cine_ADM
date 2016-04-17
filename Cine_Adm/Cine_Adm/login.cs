@@ -17,5 +17,28 @@ namespace Cine_Adm
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Usuario2 entidad = new Usuario2();
+            entidad.Usuarios = this.textBox1.Text;
+            entidad.Contra = this.textBox2.Text;
+
+            if (entidad.buscar() == true)
+            {
+                MessageBox.Show(entidad.Mensaje,"CINEMA");
+
+            }
+            else
+            {
+                MessageBox.Show(entidad.Mensaje,"ERROR");
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -63,6 +63,107 @@ namespace Cine_Adm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12953295_1049608631762635_850661204_o {
+            get {
+                object obj = ResourceManager.GetObject("12953295_1049608631762635_850661204_o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _40557025_Garabatos_de_cine_iconos_conjunto_de_vectores_en_el_estilo_de_dibujo_Foto_de_archivo {
+            get {
+                object obj = ResourceManager.GetObject("40557025-Garabatos-de-cine-iconos-conjunto-de-vectores-en-el-estilo-de-dibujo-Fot" +
+                        "o-de-archivo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aqua_button_t {
+            get {
+                object obj = ResourceManager.GetObject("aqua-button_t", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aqua_button_t1 {
+            get {
+                object obj = ResourceManager.GetObject("aqua-button_t1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boleto_del_circo_en_el_fondo_del_resplandor_solar_62147501840 {
+            get {
+                object obj = ResourceManager.GetObject("boleto-del-circo-en-el-fondo-del-resplandor-solar_62147501840", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dibujosdecineparaimprimir5 {
+            get {
+                object obj = ResourceManager.GetObject("dibujosdecineparaimprimir5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grunge_circus_background_illustration_110725070 {
+            get {
+                object obj = ResourceManager.GetObject("grunge-circus-background-illustration_110725070", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap N1 {
+            get {
+                object obj = ResourceManager.GetObject("N1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap N14 {
+            get {
+                object obj = ResourceManager.GetObject("N14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap N9 {
+            get {
+                object obj = ResourceManager.GetObject("N9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap VbcFXzOy_jpg {
             get {
                 object obj = ResourceManager.GetObject("VbcFXzOy.jpg", resourceCulture);

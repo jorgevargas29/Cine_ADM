@@ -32,3 +32,4 @@ C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.usuario
 C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.csproj.GenerateResource.Cache
 C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.trabajador_agr.resources
 C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.venta_boletos.resources
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.login.resources

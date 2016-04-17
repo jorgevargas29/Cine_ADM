@@ -68,6 +68,8 @@
     <Compile Include="trabajador_agr.Designer.cs">
       <DependentUpon>trabajador_agr.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Usuario2.cs" />
     <Compile Include="usuario_compra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +142,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\VbcFXzOy.jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40557025-Garabatos-de-cine-iconos-conjunto-de-vectores-en-el-estilo-de-dibujo-Foto-de-archivo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dibujosdecineparaimprimir5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12953295_1049608631762635_850661204_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boleto-del-circo-en-el-fondo-del-resplandor-solar_62147501840.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grunge-circus-background-illustration_110725070.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aqua-button_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aqua-button_t1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
