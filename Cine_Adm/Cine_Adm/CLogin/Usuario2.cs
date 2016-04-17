@@ -9,9 +9,9 @@ namespace Cine_Adm
 {
     class Usuario2:Usuario
     {
-        private string usuario;
-        private string contra;
-        private string acceso;
+         string usuario;
+         string contra;
+        string acceso;
            public Usuario2(){
             this.usuario = string.Empty;
             this.contra = string.Empty;
@@ -41,7 +41,7 @@ namespace Cine_Adm
         public bool buscar()
         {
             bool resul = false;
-            this.sql = string.Format(@"select ID_TRABAJADOR from TRABAJADOR where TB_USUARIO='{0}'and TB_PASSWORD='{1}'", this.Usuarios, this.Contra);
+            this.sql = string.Format(@"select ID_TRABAJADOR from TRABAJADOR where TB_USUARIO='{0}'and TB_PASSWORD='{1}' and TB_ACCESO='{2}'", this.Usuarios, this.Contra,this.Acceso);
             this.sqlcomm = new SqlCommand(this.sql,this.sqlconn);
             sqlconn.Open();
             SqlDataReader read = null;

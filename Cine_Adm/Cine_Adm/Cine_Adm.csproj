@@ -56,6 +56,12 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="PeliculaAgr.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,8 +74,8 @@
     <Compile Include="trabajador_agr.Designer.cs">
       <DependentUpon>trabajador_agr.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuario.cs" />
-    <Compile Include="Usuario2.cs" />
+    <Compile Include="CLogin\Usuario.cs" />
+    <Compile Include="CLogin\Usuario2.cs" />
     <Compile Include="usuario_compra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PeliculaAgr.resx">
       <DependentUpon>PeliculaAgr.cs</DependentUpon>
