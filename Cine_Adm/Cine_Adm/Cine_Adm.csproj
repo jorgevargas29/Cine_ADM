@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientes_agr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes_agr.Designer.cs">
+      <DependentUpon>Clientes_agr.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     <Compile Include="venta_boletos.Designer.cs">
       <DependentUpon>venta_boletos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Clientes_agr.resx">
+      <DependentUpon>Clientes_agr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +190,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\aqua-button_t1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aqua-button_t2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15315155-Etichetta-vintage-su-sfondo-grunge-con-raggi-colorati-Archivio-Fotografico.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

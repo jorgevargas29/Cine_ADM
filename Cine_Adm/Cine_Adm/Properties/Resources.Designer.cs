@@ -73,6 +73,17 @@ namespace Cine_Adm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _15315155_Etichetta_vintage_su_sfondo_grunge_con_raggi_colorati_Archivio_Fotografico {
+            get {
+                object obj = ResourceManager.GetObject("15315155-Etichetta-vintage-su-sfondo-grunge-con-raggi-colorati-Archivio-Fotografi" +
+                        "co", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _40557025_Garabatos_de_cine_iconos_conjunto_de_vectores_en_el_estilo_de_dibujo_Foto_de_archivo {
             get {
                 object obj = ResourceManager.GetObject("40557025-Garabatos-de-cine-iconos-conjunto-de-vectores-en-el-estilo-de-dibujo-Fot" +
@@ -97,6 +108,16 @@ namespace Cine_Adm.Properties {
         internal static System.Drawing.Bitmap aqua_button_t1 {
             get {
                 object obj = ResourceManager.GetObject("aqua-button_t1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aqua_button_t2 {
+            get {
+                object obj = ResourceManager.GetObject("aqua-button_t2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -147,6 +168,26 @@ namespace Cine_Adm.Properties {
         internal static System.Drawing.Bitmap N14 {
             get {
                 object obj = ResourceManager.GetObject("N14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap N141 {
+            get {
+                object obj = ResourceManager.GetObject("N141", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap N142 {
+            get {
+                object obj = ResourceManager.GetObject("N142", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

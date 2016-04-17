@@ -53,6 +53,20 @@ namespace Cine_Adm
                     this.Hide();
 
                 }
+                else if (this.comboBox1.Text == "Trabajador")
+                {
+                    //revisar
+                    MessageBox.Show(entidad.Mensaje, "CINEMA");
+                    MenuPrincipal menu = new MenuPrincipal();
+                    menu.peliculasToolStripMenuItem1.Enabled = false;
+                    menu.trabajadoresToolStripMenuItem.Enabled = false;
+                    menu.ventaToolStripMenuItem.Enabled = true;
+                    menu.carteleraToolStripMenuItem.Enabled = true;
+                    menu.peliculasToolStripMenuItem.Enabled = true;
+                    menu.Show();
+                    this.Hide();
+
+                }
                 
 
             }

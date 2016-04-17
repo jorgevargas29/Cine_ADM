@@ -34,3 +34,4 @@ C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.trabaja
 C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.venta_boletos.resources
 C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.login.resources
 C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.MenuPrincipal.resources
+C:\Users\Usuario\Documents\Cine_ADM\Cine_Adm\Cine_Adm\obj\Debug\Cine_Adm.Clientes_agr.resources
