@@ -65,6 +65,18 @@ namespace Cine_Adm
             usuario_compra peli = new usuario_compra();
             peli.Show();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cclientes cliente = new Cclientes();
+            cliente.Show();
+        }
+
+        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Clientes_agr agr = new Clientes_agr();
+            agr.Show();
+        }
      
     }
 }

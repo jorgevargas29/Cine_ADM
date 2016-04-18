@@ -33,6 +33,8 @@ namespace Cine_Adm
                     MenuPrincipal menu = new MenuPrincipal();
                     menu.peliculasToolStripMenuItem1.Enabled = true;
                     menu.trabajadoresToolStripMenuItem.Enabled = true;
+                    menu.clientesToolStripMenuItem.Enabled = true;
+                    menu.registroToolStripMenuItem.Enabled = true;
                     menu.ventaToolStripMenuItem.Enabled = true;
                     menu.carteleraToolStripMenuItem.Enabled = true;
                     menu.peliculasToolStripMenuItem.Enabled = true;
@@ -46,6 +48,8 @@ namespace Cine_Adm
                     MenuPrincipal menu = new MenuPrincipal();
                     menu.peliculasToolStripMenuItem1.Enabled = false;
                     menu.trabajadoresToolStripMenuItem.Enabled = false;
+                    menu.clientesToolStripMenuItem.Enabled = false;
+                    menu.registroToolStripMenuItem.Enabled = true;
                     menu.ventaToolStripMenuItem.Enabled = true;
                     menu.carteleraToolStripMenuItem.Enabled = true;
                     menu.peliculasToolStripMenuItem.Enabled = true;
@@ -60,6 +64,8 @@ namespace Cine_Adm
                     MenuPrincipal menu = new MenuPrincipal();
                     menu.peliculasToolStripMenuItem1.Enabled = false;
                     menu.trabajadoresToolStripMenuItem.Enabled = false;
+                    menu.clientesToolStripMenuItem.Enabled = true;
+                    menu.registroToolStripMenuItem.Enabled = true;
                     menu.ventaToolStripMenuItem.Enabled = true;
                     menu.carteleraToolStripMenuItem.Enabled = true;
                     menu.peliculasToolStripMenuItem.Enabled = true;

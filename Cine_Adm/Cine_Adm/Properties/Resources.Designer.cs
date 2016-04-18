@@ -73,10 +73,30 @@ namespace Cine_Adm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12953295_1049608631762635_850661204_o1 {
+            get {
+                object obj = ResourceManager.GetObject("12953295_1049608631762635_850661204_o1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _15315155_Etichetta_vintage_su_sfondo_grunge_con_raggi_colorati_Archivio_Fotografico {
             get {
                 object obj = ResourceManager.GetObject("15315155-Etichetta-vintage-su-sfondo-grunge-con-raggi-colorati-Archivio-Fotografi" +
                         "co", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _26783932_A_retro_circus_background_for_a_poster_Stock_Vector {
+            get {
+                object obj = ResourceManager.GetObject("26783932-A-retro-circus-background-for-a-poster-Stock-Vector", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

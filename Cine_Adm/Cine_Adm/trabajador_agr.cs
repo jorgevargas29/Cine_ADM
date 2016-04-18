@@ -15,7 +15,7 @@ namespace Cine_Adm
 {
     public partial class trabajador_agr : Form
     {
-
+       // el id se genera automaticamnete
         string sql;
         string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
         DataTable dt;
@@ -50,7 +50,7 @@ namespace Cine_Adm
 
             DataTable dt = new DataTable();
             sql = "insert into TRABAJADOR (" +
-                "ID_TRABAJADOR," +
+                //"ID_TRABAJADOR," +
                 "TB_NOMBRE," +
                 "TB_CEDULA," +
                 "TB_APELLIDO," +
@@ -62,7 +62,7 @@ namespace Cine_Adm
                 "TB_PASSWORD," +
                 "TB_ACCESO" +
                 ") values (" +
-                "'" + textBox7.Text + "'," +
+                //"'" + textBox7.Text + "'," +
                 "'" + textBox1.Text + "'," +
                 "'" + textBox9.Text + "'," +
                 "'" + textBox2.Text + "'," +
@@ -240,7 +240,7 @@ namespace Cine_Adm
 
         public void limpiar()
         {
-            textBox7.Text = "";
+            //textBox7.Text = "";
             textBox1.Text = "";
             textBox9.Text = "";
             textBox2.Text = "";

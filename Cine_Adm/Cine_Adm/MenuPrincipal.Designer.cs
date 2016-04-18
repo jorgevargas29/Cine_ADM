@@ -32,6 +32,7 @@
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.ventaDeBoletosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seleccionDeSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carteleraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.peliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,7 +46,8 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -71,9 +73,10 @@
             this.seleccionDeSucursalToolStripMenuItem,
             this.ventaToolStripMenuItem,
             this.carteleraToolStripMenuItem,
+            this.registroToolStripMenuItem,
             this.peliculasToolStripMenuItem,
             this.salirToolStripMenuItem});
-            this.ventaDeBoletosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ventaDeBoletosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ventaDeBoletosToolStripMenuItem.Name = "ventaDeBoletosToolStripMenuItem";
             this.ventaDeBoletosToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
             this.ventaDeBoletosToolStripMenuItem.Text = "Venta de Boletos";
@@ -86,6 +89,15 @@
             this.seleccionDeSucursalToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.seleccionDeSucursalToolStripMenuItem.Text = "Seleccion de sucursal";
             this.seleccionDeSucursalToolStripMenuItem.Click += new System.EventHandler(this.seleccionDeSucursalToolStripMenuItem_Click);
+            // 
+            // ventaToolStripMenuItem
+            // 
+            this.ventaToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ventaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ventaToolStripMenuItem.Name = "ventaToolStripMenuItem";
+            this.ventaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.ventaToolStripMenuItem.Text = "Venta ";
+            this.ventaToolStripMenuItem.Click += new System.EventHandler(this.ventaToolStripMenuItem_Click);
             // 
             // carteleraToolStripMenuItem
             // 
@@ -119,7 +131,8 @@
             this.mantenimientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.peliculasToolStripMenuItem1,
             this.trabajadoresToolStripMenuItem,
-            this.finanzasToolStripMenuItem});
+            this.finanzasToolStripMenuItem,
+            this.clientesToolStripMenuItem});
             this.mantenimientoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
@@ -192,14 +205,23 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(96, 17);
             this.toolStripStatusLabel.Text = "Cinema Mellrose";
             // 
-            // ventaToolStripMenuItem
+            // registroToolStripMenuItem
             // 
-            this.ventaToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ventaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ventaToolStripMenuItem.Name = "ventaToolStripMenuItem";
-            this.ventaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.ventaToolStripMenuItem.Text = "Venta ";
-            this.ventaToolStripMenuItem.Click += new System.EventHandler(this.ventaToolStripMenuItem_Click);
+            this.registroToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.registroToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.registroToolStripMenuItem.Text = "Registro";
+            this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clientesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -245,6 +267,8 @@
         public System.Windows.Forms.ToolStripMenuItem trabajadoresToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem finanzasToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
     }
 }
 

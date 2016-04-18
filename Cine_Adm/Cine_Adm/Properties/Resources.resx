@@ -124,6 +124,9 @@
   <data name="aqua-button_t" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aqua-button_t.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="grunge-circus-background-illustration_110725070" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grunge-circus-background-illustration_110725070.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dibujosdecineparaimprimir5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dibujosdecineparaimprimir5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,10 +160,13 @@
   <data name="aqua-button_t1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aqua-button_t1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grunge-circus-background-illustration_110725070" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grunge-circus-background-illustration_110725070.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="15315155-Etichetta-vintage-su-sfondo-grunge-con-raggi-colorati-Archivio-Fotografico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\15315155-Etichetta-vintage-su-sfondo-grunge-con-raggi-colorati-Archivio-Fotografico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="26783932-A-retro-circus-background-for-a-poster-Stock-Vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\26783932-A-retro-circus-background-for-a-poster-Stock-Vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12953295_1049608631762635_850661204_o1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12953295_1049608631762635_850661204_o1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
