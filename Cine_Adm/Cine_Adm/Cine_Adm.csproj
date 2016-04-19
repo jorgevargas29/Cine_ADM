@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\CargarItemsCombobox.cs" />
     <Compile Include="Cclientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,8 +87,8 @@
     <Compile Include="trabajador_agr.Designer.cs">
       <DependentUpon>trabajador_agr.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLogin\Usuario.cs" />
-    <Compile Include="CLogin\Usuario2.cs" />
+    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Clases\Usuario2.cs" />
     <Compile Include="usuario_compra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +219,7 @@
   <ItemGroup>
     <None Include="Resources\12953295_1049608631762635_850661204_o1.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

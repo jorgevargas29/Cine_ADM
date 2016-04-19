@@ -35,6 +35,7 @@ namespace Cine_Adm
               "TB_USUARIO" + " as Usuario," +
                "TB_PASSWORD" + " as 'Contraseña'," +
                "TB_ACCESO" + " as 'Acceso'" +
+              
               " from " + "TRABAJADOR";
 
         public trabajador_agr()
@@ -47,7 +48,7 @@ namespace Cine_Adm
         {
             sqlconn.Open();
             sqlcomm = new SqlCommand();
-
+            
             DataTable dt = new DataTable();
             sql = "insert into TRABAJADOR (" +
                 //"ID_TRABAJADOR," +
@@ -61,6 +62,7 @@ namespace Cine_Adm
                  "TB_USUARIO," +
                 "TB_PASSWORD," +
                 "TB_ACCESO" +
+                
                 ") values (" +
                 //"'" + textBox7.Text + "'," +
                 "'" + textBox1.Text + "'," +
@@ -90,7 +92,9 @@ namespace Cine_Adm
 
         private void trabajador_agr_Load(object sender, EventArgs e)
         {
-
+            CargarItemsCombobox c = new CargarItemsCombobox();
+            c.llenaritemT(comboBox2);
+            textBox7.Enabled = false;
             dt = new DataTable();
             sql = selec;
             sqlconn = new SqlConnection(conexion);
@@ -136,6 +140,7 @@ namespace Cine_Adm
             textBox5.Text = dt.Rows[0][8].ToString();
             textBox6.Text = dt.Rows[0][9].ToString();
             textBox12.Text = dt.Rows[0][10].ToString();
+
             dataGridView1.DataSource = dt;
 
 
@@ -157,6 +162,7 @@ namespace Cine_Adm
                 textBox5.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
                 textBox6.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
                 textBox12.Text = dataGridView1.CurrentRow.Cells["Acceso"].Value.ToString();
+                
 
 
             }
@@ -198,6 +204,7 @@ namespace Cine_Adm
             "TB_USUARIO = '" + textBox5.Text + "'," +
             "TB_PASSWORD = '" + textBox6.Text + "'," +
             "TB_ACCESO = '" + textBox12.Text + "'" +
+           
             " where" + " ID_TRABAJADOR  =  " + textBox7.Text;
            
             sqlcomm.Connection = sqlconn;
@@ -252,6 +259,8 @@ namespace Cine_Adm
             textBox6.Text = "";
             textBox12.Text = "";
             textBox8.Text = "";
+            comboBox1.Text = "";
+            comboBox2.Text = "";
 
         }
 
