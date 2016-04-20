@@ -30,7 +30,7 @@ namespace Cine_Adm
         private void usuario_compra_Load(object sender, EventArgs e)
         {
             string sql;
-            string conexion = "Data Source=JORGE-PC\\SQLEXPRESS;Initial Catalog=CINE;Integrated Security=True;";
+            string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
             DataTable dt = new DataTable();
             sql = "select " +
                 "ID_PELICULA" + " as 'Cod.Pelicula' , " +
@@ -57,23 +57,23 @@ namespace Cine_Adm
         }
 
         public void guardarImagen_ListView() {
-            DirectoryInfo dir = new DirectoryInfo(@"C:\Users\Jorge\Documents\Cine_ADM\Cine_Adm\Source\Posters");
-            foreach (FileInfo file in dir.GetFiles())
-            {
-                try
-                {
-                    this.imageList1.Images.Add(Image.FromFile(file.FullName));
-                }
-                catch
-                {
-                    Console.WriteLine("No es un archivo de imagen");
-                }
-            }
-            this.listView1.View = View.LargeIcon;
-            this.imageList1.ImageSize = new Size(32, 32);
-            this.listView1.LargeImageList = this.imageList1;
+            //DirectoryInfo dir = new DirectoryInfo(@"C:\Users\Jorge\Documents\Cine_ADM\Cine_Adm\Source\Posters");
+            //foreach (FileInfo file in dir.GetFiles())
+            //{
+            //    try
+            //    {
+            //        this.imageList1.Images.Add(Image.FromFile(file.FullName));
+            //    }
+            //    catch
+            //    {
+            //        Console.WriteLine("No es un archivo de imagen");
+            //    }
+            //}
+            //this.listView1.View = View.LargeIcon;
+            //this.imageList1.ImageSize = new Size(32, 32);
+            //this.listView1.LargeImageList = this.imageList1;
         }
-
+        #region
         private void button89_Click(object sender, EventArgs e)
         {
             if (button89.Enabled == true && clicked == false)
@@ -269,11 +269,25 @@ namespace Cine_Adm
                 clicked = false;
             }
         }
-
+      
+        private void button110_Click(object sender, EventArgs e)
+        {
+            if (button110.Enabled == true && clicked == false)
+            {
+                button110.Image = Properties.Resources.seat1;
+                clicked = true;
+            }
+            else if (clicked == true)
+            {
+                button110.Image = Properties.Resources.seat;
+                clicked = false;
+            }
+        }
+        #endregion
         private DataTable cargarCbxPelicula()
         {
             string sql;
-            string conexion = "Data Source=JORGE-PC\\SQLEXPRESS;Initial Catalog=CINE;Integrated Security=True;";
+            string conexion = "Data Source=User;Initial Catalog=CINE;Integrated Security=True;";
             DataTable dt = new DataTable();
             sql = "select " +
                  "PL_TITULO" +

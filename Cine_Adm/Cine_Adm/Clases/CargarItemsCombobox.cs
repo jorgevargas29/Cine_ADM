@@ -56,6 +56,23 @@ namespace Cine_Adm
            }
 
        }
+       public void llenaritemP(ComboBox cb)
+       {
+           try
+           {
+               sqlcomm = new SqlCommand("select PL_TITULO from PELICULA", sqlconn);
+               sqldr = sqlcomm.ExecuteReader();
+               while (sqldr.Read())
+               {
+                   cb.Items.Add(sqldr["PL_TITULO"].ToString());
+               } sqldr.Close();
+           }
+           catch (Exception e)
+           {
+
+           }
+
+       }
 
 
 

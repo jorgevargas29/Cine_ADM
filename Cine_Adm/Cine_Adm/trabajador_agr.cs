@@ -34,7 +34,8 @@ namespace Cine_Adm
               "TB_EDAD" + " as Edad, " +
               "TB_USUARIO" + " as Usuario," +
                "TB_PASSWORD" + " as 'Contraseña'," +
-               "TB_ACCESO" + " as 'Acceso'" +
+               "TB_ACCESO" + " as 'Acceso'," +
+                "ID_TBSUCURSAL" + " as 'Sucursal'" +
               
               " from " + "TRABAJADOR";
 
@@ -61,7 +62,8 @@ namespace Cine_Adm
                 "TB_EDAD," +
                  "TB_USUARIO," +
                 "TB_PASSWORD," +
-                "TB_ACCESO" +
+                "TB_ACCESO," +
+                "ID_TBSUCURSAL"+
                 
                 ") values (" +
                 //"'" + textBox7.Text + "'," +
@@ -74,7 +76,8 @@ namespace Cine_Adm
                 "'" + textBox4.Text + "'," +
                  "'" + textBox5.Text + "'," +
                 "'" + textBox6.Text + "'," +
-                "'" + textBox12.Text + "'" +
+                "'" + textBox12.Text + "'," +
+                  "'" + textBox13.Text + "'" +
                  ")";
             sqlcomm.Connection = sqlconn;
             sqlcomm.CommandText = sql;
@@ -140,6 +143,7 @@ namespace Cine_Adm
             textBox5.Text = dt.Rows[0][8].ToString();
             textBox6.Text = dt.Rows[0][9].ToString();
             textBox12.Text = dt.Rows[0][10].ToString();
+            textBox12.Text = dt.Rows[0][11].ToString();
 
             dataGridView1.DataSource = dt;
 
@@ -162,7 +166,7 @@ namespace Cine_Adm
                 textBox5.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
                 textBox6.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
                 textBox12.Text = dataGridView1.CurrentRow.Cells["Acceso"].Value.ToString();
-                
+                textBox12.Text = dataGridView1.CurrentRow.Cells["Sucursal"].Value.ToString();
 
 
             }
@@ -203,7 +207,8 @@ namespace Cine_Adm
             "TB_EDAD = '" + textBox11.Text + "'," +
             "TB_USUARIO = '" + textBox5.Text + "'," +
             "TB_PASSWORD = '" + textBox6.Text + "'," +
-            "TB_ACCESO = '" + textBox12.Text + "'" +
+            "TB_ACCESO = '" + textBox12.Text + "'," +
+            "ID_TBSUCURSAL = '" + textBox13.Text + "'" +
            
             " where" + " ID_TRABAJADOR  =  " + textBox7.Text;
            
@@ -261,6 +266,8 @@ namespace Cine_Adm
             textBox8.Text = "";
             comboBox1.Text = "";
             comboBox2.Text = "";
+            textBox13.Text = "";
+
 
         }
 
@@ -279,6 +286,12 @@ namespace Cine_Adm
         {
             textBox12.Text = Convert.ToString(comboBox1.SelectedItem);
             textBox12.Enabled = false;
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox13.Text = Convert.ToString(comboBox2.SelectedItem);
+            textBox13.Enabled = false;
         }
     }
 }

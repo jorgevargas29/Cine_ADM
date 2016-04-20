@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(trabajador_agr));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -67,7 +68,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -90,6 +91,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Black;
+            this.tabPage1.Controls.Add(this.textBox13);
             this.tabPage1.Controls.Add(this.comboBox2);
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.textBox12);
@@ -125,13 +127,22 @@
             this.tabPage1.Text = "Agregar";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(289, 116);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(190, 26);
+            this.comboBox2.TabIndex = 56;
+            this.comboBox2.Text = "Seleccione Sucursal";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Administrador",
-            "Trabajador",
-            "Cliente"});
+            "Trabajador"});
             this.comboBox1.Location = new System.Drawing.Point(358, 57);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 26);
@@ -140,10 +151,11 @@
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(358, 86);
+            this.textBox12.Location = new System.Drawing.Point(358, 89);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(135, 24);
+            this.textBox12.Size = new System.Drawing.Size(121, 24);
             this.textBox12.TabIndex = 54;
+            this.textBox12.Visible = false;
             this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // label8
@@ -474,14 +486,13 @@
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
-            // comboBox2
+            // textBox13
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(289, 136);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(190, 26);
-            this.comboBox2.TabIndex = 56;
-            this.comboBox2.Text = "Seleccione Sucursal";
+            this.textBox13.Location = new System.Drawing.Point(485, 118);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(26, 24);
+            this.textBox13.TabIndex = 57;
+            this.textBox13.Visible = false;
             // 
             // trabajador_agr
             // 
@@ -548,5 +559,6 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox13;
     }
 }

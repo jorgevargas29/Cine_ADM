@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usuario_compra));
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.pBox2 = new System.Windows.Forms.PictureBox();
             this.pBox3 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -609,6 +609,7 @@
             this.button110.TabIndex = 130;
             this.button110.Text = "button110";
             this.button110.UseVisualStyleBackColor = true;
+            this.button110.Click += new System.EventHandler(this.button110_Click);
             // 
             // button111
             // 
@@ -1049,10 +1050,10 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup1";
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "listViewGroup1";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup2});
+            listViewGroup1});
             this.listView1.LargeImageList = this.imageList1;
             this.listView1.Location = new System.Drawing.Point(75, 12);
             this.listView1.Name = "listView1";

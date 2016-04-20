@@ -260,6 +260,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Cine_Adm.Properties.Resources._40557025_Garabatos_de_cine_iconos_conjunto_de_vectores_en_el_estilo_de_dibujo_Foto_de_archivo;
             this.ClientSize = new System.Drawing.Size(726, 675);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
