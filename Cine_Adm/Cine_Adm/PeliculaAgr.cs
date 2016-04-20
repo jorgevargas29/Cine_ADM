@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace Cine_Adm
 {
@@ -16,7 +17,7 @@ namespace Cine_Adm
     {
         
         string sql;
-            string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
+            string conexion = "Data Source=JORGE-PC\\SQLEXPRESS;Initial Catalog=CINE;Integrated Security=True;";
             DataTable dt;
          SqlConnection sqlconn;
          SqlDataAdapter sqlda;
@@ -55,7 +56,7 @@ namespace Cine_Adm
             dataGridView1.DataSource = dt;
             this.dataGridView1.Columns[8].Visible = false;
         }
-        public void VerImagen(PictureBox imagen, ComboBox comb)
+       public void VerImagen(PictureBox imagen, ComboBox comb)
         {
             SqlCommand com = new SqlCommand("select " + "PL_IMAGEN" +
                " from " + "PELICULA" + " where " + "ID_PELICULA = '" + comb.SelectedValue.ToString() + "' ", sqlconn);
@@ -80,7 +81,23 @@ namespace Cine_Adm
                 pictureBox1.Image = Image.FromFile(dialog.FileName);
             }
         }
-
+        public void GuardarImagen()
+        {
+            //SaveFileDialog Guardar = new SaveFileDialog();
+            //Guardar.Filter = "JPEG(*.jpg)|*.jpg|BMP(*.bmp)|*.BMP";
+            //Image Imagen = pictureBox1.Image;
+            //Guardar.ShowDialog();
+            //Imagen.Save(Guardar.FileName);
+            {
+                // Be sure that you use an appropriate escape sequence (such as the 
+                // @) when specifying the location of the file.
+                System.Drawing.Image myImage = Image.FromFile
+                (System.Environment.GetFolderPath
+                (System.Environment.SpecialFolder.Personal)
+                + @"../../Source/Posters/");
+                //imageList1.Images.Add(myImage);
+            }
+        }
         private void bGuardar_Click(object sender, EventArgs e)
         {
             try
@@ -90,7 +107,7 @@ namespace Cine_Adm
 
                 // Estableciento propiedades
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO PELICULA VALUES (@ID_PELICULA, @PL_TITULO, @PL_IDIOMA, @PL_CLASIFICACION, @PL_DURACION,@PL_IMAGEN,@PL_GENERO,@PL_SINOPSIS,@PL_DIRECTOR)";
+                cmd.CommandText = "INSERT INTO PELICULA VALUES (@ID_PELICULA, @PL_TITULO, @PL_IDIOMA, @PL_CLASIFICACION, @PL_DURACION,@PL_GENERO,@PL_SINOPSIS,@PL_DIRECTOR,@PL_IMAGEN)";
 
                 // Creando los parámetros necesarios
                 cmd.Parameters.Add("@ID_PELICULA", System.Data.SqlDbType.Int);
@@ -119,12 +136,13 @@ namespace Cine_Adm
                 // Asignando el valor de la imagen
 
                 // Stream usado como buffer
-                System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                 System.IO.MemoryStream ms = new System.IO.MemoryStream();
                 // Se guarda la imagen en el buffer
                 pictureBox1.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
                 // Se extraen los bytes del buffer para asignarlos como valor para el
                 // parámetro.
                 cmd.Parameters["@PL_IMAGEN"].Value = ms.GetBuffer();
+               GuardarImagen();
 
                 conn.Open();
                 cmd.ExecuteNonQuery();

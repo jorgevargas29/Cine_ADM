@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usuario_compra));
-            this.pBox1 = new System.Windows.Forms.PictureBox();
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.pBox2 = new System.Windows.Forms.PictureBox();
             this.pBox3 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -117,7 +117,8 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).BeginInit();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -125,16 +126,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pBox1
-            // 
-            this.pBox1.ErrorImage = null;
-            this.pBox1.Location = new System.Drawing.Point(70, 13);
-            this.pBox1.Name = "pBox1";
-            this.pBox1.Size = new System.Drawing.Size(219, 275);
-            this.pBox1.TabIndex = 0;
-            this.pBox1.TabStop = false;
-            this.pBox1.Click += new System.EventHandler(this.pBox1_Click);
             // 
             // pBox2
             // 
@@ -275,8 +266,8 @@
             this.button63.Name = "button63";
             this.button63.Size = new System.Drawing.Size(32, 32);
             this.button63.TabIndex = 164;
-            this.button63.Text = "button63";
             this.button63.UseVisualStyleBackColor = true;
+            this.button63.Click += new System.EventHandler(this.button63_Click);
             // 
             // button77
             // 
@@ -285,8 +276,8 @@
             this.button77.Name = "button77";
             this.button77.Size = new System.Drawing.Size(32, 32);
             this.button77.TabIndex = 163;
-            this.button77.Text = "button77";
             this.button77.UseVisualStyleBackColor = true;
+            this.button77.Click += new System.EventHandler(this.button77_Click);
             // 
             // button78
             // 
@@ -295,8 +286,8 @@
             this.button78.Name = "button78";
             this.button78.Size = new System.Drawing.Size(32, 32);
             this.button78.TabIndex = 162;
-            this.button78.Text = "button78";
             this.button78.UseVisualStyleBackColor = true;
+            this.button78.Click += new System.EventHandler(this.button78_Click);
             // 
             // button79
             // 
@@ -305,8 +296,8 @@
             this.button79.Name = "button79";
             this.button79.Size = new System.Drawing.Size(32, 32);
             this.button79.TabIndex = 161;
-            this.button79.Text = "button79";
             this.button79.UseVisualStyleBackColor = true;
+            this.button79.Click += new System.EventHandler(this.button79_Click);
             // 
             // button80
             // 
@@ -315,8 +306,8 @@
             this.button80.Name = "button80";
             this.button80.Size = new System.Drawing.Size(32, 32);
             this.button80.TabIndex = 160;
-            this.button80.Text = "button80";
             this.button80.UseVisualStyleBackColor = true;
+            this.button80.Click += new System.EventHandler(this.button80_Click);
             // 
             // button81
             // 
@@ -325,8 +316,8 @@
             this.button81.Name = "button81";
             this.button81.Size = new System.Drawing.Size(32, 32);
             this.button81.TabIndex = 159;
-            this.button81.Text = "button81";
             this.button81.UseVisualStyleBackColor = true;
+            this.button81.Click += new System.EventHandler(this.button81_Click);
             // 
             // button82
             // 
@@ -335,8 +326,8 @@
             this.button82.Name = "button82";
             this.button82.Size = new System.Drawing.Size(32, 32);
             this.button82.TabIndex = 158;
-            this.button82.Text = "button82";
             this.button82.UseVisualStyleBackColor = true;
+            this.button82.Click += new System.EventHandler(this.button82_Click);
             // 
             // button83
             // 
@@ -345,8 +336,8 @@
             this.button83.Name = "button83";
             this.button83.Size = new System.Drawing.Size(32, 32);
             this.button83.TabIndex = 157;
-            this.button83.Text = "button83";
             this.button83.UseVisualStyleBackColor = true;
+            this.button83.Click += new System.EventHandler(this.button83_Click);
             // 
             // button84
             // 
@@ -355,8 +346,8 @@
             this.button84.Name = "button84";
             this.button84.Size = new System.Drawing.Size(32, 32);
             this.button84.TabIndex = 156;
-            this.button84.Text = "button84";
             this.button84.UseVisualStyleBackColor = true;
+            this.button84.Click += new System.EventHandler(this.button84_Click);
             // 
             // button85
             // 
@@ -365,8 +356,8 @@
             this.button85.Name = "button85";
             this.button85.Size = new System.Drawing.Size(32, 32);
             this.button85.TabIndex = 155;
-            this.button85.Text = "button85";
             this.button85.UseVisualStyleBackColor = true;
+            this.button85.Click += new System.EventHandler(this.button85_Click);
             // 
             // button86
             // 
@@ -375,8 +366,8 @@
             this.button86.Name = "button86";
             this.button86.Size = new System.Drawing.Size(32, 32);
             this.button86.TabIndex = 154;
-            this.button86.Text = "button86";
             this.button86.UseVisualStyleBackColor = true;
+            this.button86.Click += new System.EventHandler(this.button86_Click);
             // 
             // button87
             // 
@@ -385,8 +376,8 @@
             this.button87.Name = "button87";
             this.button87.Size = new System.Drawing.Size(32, 32);
             this.button87.TabIndex = 153;
-            this.button87.Text = "button87";
             this.button87.UseVisualStyleBackColor = true;
+            this.button87.Click += new System.EventHandler(this.button87_Click);
             // 
             // button88
             // 
@@ -395,18 +386,19 @@
             this.button88.Name = "button88";
             this.button88.Size = new System.Drawing.Size(32, 32);
             this.button88.TabIndex = 152;
-            this.button88.Text = "button88";
             this.button88.UseVisualStyleBackColor = true;
+            this.button88.Click += new System.EventHandler(this.button88_Click);
             // 
             // button89
             // 
-            this.button89.Image = ((System.Drawing.Image)(resources.GetObject("button89.Image")));
+            this.button89.Image = global::Cine_Adm.Properties.Resources.seat;
             this.button89.Location = new System.Drawing.Point(48, 73);
             this.button89.Name = "button89";
             this.button89.Size = new System.Drawing.Size(32, 32);
             this.button89.TabIndex = 151;
-            this.button89.Text = "button89";
+            this.button89.TabStop = false;
             this.button89.UseVisualStyleBackColor = true;
+            this.button89.Click += new System.EventHandler(this.button89_Click);
             // 
             // button90
             // 
@@ -1053,12 +1045,30 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            listViewGroup2.Header = "ListViewGroup";
+            listViewGroup2.Name = "listViewGroup1";
+            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup2});
+            this.listView1.LargeImageList = this.imageList1;
+            this.listView1.Location = new System.Drawing.Point(75, 12);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(219, 275);
+            this.listView1.SmallImageList = this.imageList1;
+            this.listView1.TabIndex = 92;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Tile;
+            // 
             // usuario_compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(984, 733);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.panel1);
@@ -1068,14 +1078,12 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pBox3);
             this.Controls.Add(this.pBox2);
-            this.Controls.Add(this.pBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "usuario_compra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.usuario_compra_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -1088,8 +1096,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pBox1;
         private System.Windows.Forms.PictureBox pBox2;
         private System.Windows.Forms.PictureBox pBox3;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -1176,5 +1182,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
