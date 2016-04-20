@@ -129,19 +129,7 @@ namespace Cine_Adm
             }
         }
 
-        private void button86_Click(object sender, EventArgs e)
-        {
-            if (button86.Enabled == true && clicked == false)
-            {
-                button86.Image = Properties.Resources.seat1;
-                clicked = true;
-            }
-            else if (clicked == true)
-            {
-                button86.Image = Properties.Resources.seat;
-                clicked = false;
-            }
-        }
+       
 
         private void button84_Click(object sender, EventArgs e)
         {

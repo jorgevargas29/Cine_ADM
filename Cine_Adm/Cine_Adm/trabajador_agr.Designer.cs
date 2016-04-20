@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(trabajador_agr));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -57,18 +58,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -126,6 +126,14 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Agregar";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(485, 118);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(26, 24);
+            this.textBox13.TabIndex = 57;
+            this.textBox13.Visible = false;
             // 
             // comboBox2
             // 
@@ -360,20 +368,6 @@
             this.label7.TabIndex = 37;
             this.label7.Text = "Contrasena";
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Cine_Adm.Properties.Resources.aqua_button_t;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(357, 200);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 44);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Black;
@@ -382,44 +376,14 @@
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.textBox8);
-            this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(565, 347);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Modificar/Eliminar";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(171, 264);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 48);
-            this.button4.TabIndex = 34;
-            this.button4.Text = "Eliminar";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(9, 264);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 48);
-            this.button3.TabIndex = 33;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label12
             // 
@@ -438,21 +402,6 @@
             this.textBox8.Size = new System.Drawing.Size(100, 24);
             this.textBox8.TabIndex = 31;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(257, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 48);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -486,13 +435,64 @@
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox13
+            // button1
             // 
-            this.textBox13.Location = new System.Drawing.Point(485, 118);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(26, 24);
-            this.textBox13.TabIndex = 57;
-            this.textBox13.Visible = false;
+            this.button1.BackgroundImage = global::Cine_Adm.Properties.Resources.aqua_button_t;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(357, 200);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 44);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "Guardar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(171, 264);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(139, 48);
+            this.button4.TabIndex = 34;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(9, 264);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(139, 48);
+            this.button3.TabIndex = 33;
+            this.button3.Text = "Modificar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(257, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(139, 48);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Buscar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // trabajador_agr
             // 

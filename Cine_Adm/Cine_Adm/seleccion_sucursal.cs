@@ -27,7 +27,10 @@ namespace Cine_Adm
 
         private void button1_Click(object sender, EventArgs e)
         {
-         
+            MessageBox.Show("Bienvenido", " CINEMA MELLROSE ", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+            this.Hide();
             
 
         }

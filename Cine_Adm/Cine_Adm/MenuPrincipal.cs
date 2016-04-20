@@ -77,6 +77,11 @@ namespace Cine_Adm
             Clientes_agr agr = new Clientes_agr();
             agr.Show();
         }
+
+        private void finanzasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
      
     }
 }

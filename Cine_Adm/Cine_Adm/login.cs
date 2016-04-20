@@ -20,6 +20,7 @@ namespace Cine_Adm
 
         private void button2_Click(object sender, EventArgs e)
         {
+            cine_controller sucursal = new cine_controller();
             Usuario2 entidad = new Usuario2();
             entidad.Usuarios = this.textBox1.Text;
             entidad.Contra = this.textBox2.Text;
@@ -38,7 +39,7 @@ namespace Cine_Adm
                     menu.ventaToolStripMenuItem.Enabled = true;
                     menu.carteleraToolStripMenuItem.Enabled = true;
                     menu.peliculasToolStripMenuItem.Enabled = true;
-                    menu.Show();
+                 
                     this.Hide();
                 }
                 else if (this.comboBox1.Text == "Cliente")
@@ -53,7 +54,7 @@ namespace Cine_Adm
                     menu.ventaToolStripMenuItem.Enabled = true;
                     menu.carteleraToolStripMenuItem.Enabled = true;
                     menu.peliculasToolStripMenuItem.Enabled = true;
-                    menu.Show();
+                    
                     this.Hide();
 
                 }
@@ -69,7 +70,7 @@ namespace Cine_Adm
                     menu.ventaToolStripMenuItem.Enabled = true;
                     menu.carteleraToolStripMenuItem.Enabled = true;
                     menu.peliculasToolStripMenuItem.Enabled = true;
-                    menu.Show();
+              
                     this.Hide();
 
                 }
@@ -81,6 +82,7 @@ namespace Cine_Adm
                 MessageBox.Show(entidad.Mensaje,"ERROR");
             }
             #endregion
+            sucursal.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

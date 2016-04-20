@@ -74,92 +74,120 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(81, 78);
+            this.label8.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label8.Location = new System.Drawing.Point(9, 74);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 13);
+            this.label8.Size = new System.Drawing.Size(53, 17);
             this.label8.TabIndex = 37;
             this.label8.Text = "Titulo";
             // 
             // bGuardar
             // 
-            this.bGuardar.Location = new System.Drawing.Point(428, 346);
+            this.bGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.bGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bGuardar.BackgroundImage")));
+            this.bGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bGuardar.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bGuardar.Location = new System.Drawing.Point(428, 353);
             this.bGuardar.Name = "bGuardar";
-            this.bGuardar.Size = new System.Drawing.Size(75, 23);
+            this.bGuardar.Size = new System.Drawing.Size(105, 38);
             this.bGuardar.TabIndex = 36;
             this.bGuardar.Text = "Guardar";
-            this.bGuardar.UseVisualStyleBackColor = true;
+            this.bGuardar.UseVisualStyleBackColor = false;
             this.bGuardar.Click += new System.EventHandler(this.bGuardar_Click);
             // 
             // bExaminar
             // 
+            this.bExaminar.BackColor = System.Drawing.Color.Transparent;
+            this.bExaminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bExaminar.BackgroundImage")));
+            this.bExaminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bExaminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bExaminar.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bExaminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bExaminar.Location = new System.Drawing.Point(428, 317);
             this.bExaminar.Name = "bExaminar";
-            this.bExaminar.Size = new System.Drawing.Size(75, 23);
+            this.bExaminar.Size = new System.Drawing.Size(105, 38);
             this.bExaminar.TabIndex = 35;
             this.bExaminar.Text = "Examinar";
-            this.bExaminar.UseVisualStyleBackColor = true;
+            this.bExaminar.UseVisualStyleBackColor = false;
             this.bExaminar.Click += new System.EventHandler(this.bExaminar_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(81, 253);
+            this.label7.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(9, 249);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.Size = new System.Drawing.Size(66, 17);
             this.label7.TabIndex = 34;
             this.label7.Text = "Sinopsis";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(81, 215);
+            this.label6.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(9, 211);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 13);
+            this.label6.Size = new System.Drawing.Size(100, 17);
             this.label6.TabIndex = 33;
             this.label6.Text = "Clasificacion";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(81, 189);
+            this.label5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.Location = new System.Drawing.Point(9, 185);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.Size = new System.Drawing.Size(57, 17);
             this.label5.TabIndex = 32;
             this.label5.Text = "Genero";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(81, 156);
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(9, 152);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(68, 17);
             this.label4.TabIndex = 31;
             this.label4.Text = "Director";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(81, 133);
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(9, 129);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(74, 17);
             this.label3.TabIndex = 30;
             this.label3.Text = "Duracion";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(81, 104);
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(9, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(57, 17);
             this.label2.TabIndex = 29;
             this.label2.Text = "Idioma";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 52);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(9, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(99, 17);
             this.label1.TabIndex = 28;
             this.label1.Text = "ID_Pelicula";
             // 
@@ -225,10 +253,15 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(509, 317);
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(539, 317);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(105, 38);
             this.button3.TabIndex = 40;
             this.button3.Text = "Modificar";
             this.button3.UseVisualStyleBackColor = false;
@@ -236,21 +269,28 @@
             // 
             // button5
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.BackgroundImage = global::Cine_Adm.Properties.Resources.Film;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(291, 35);
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Location = new System.Drawing.Point(291, 48);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 44);
+            this.button5.Size = new System.Drawing.Size(74, 69);
             this.button5.TabIndex = 41;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(509, 346);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(539, 353);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(105, 38);
             this.button1.TabIndex = 42;
             this.button1.Text = "Eliminar";
             this.button1.UseVisualStyleBackColor = false;
@@ -260,7 +300,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Cine_Adm.Properties.Resources._40557025_Garabatos_de_cine_iconos_conjunto_de_vectores_en_el_estilo_de_dibujo_Foto_de_archivo;
+            this.BackgroundImage = global::Cine_Adm.Properties.Resources._12953295_1049608631762635_850661204_o1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(726, 675);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);

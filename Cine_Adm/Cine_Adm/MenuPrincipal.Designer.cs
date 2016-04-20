@@ -34,20 +34,20 @@
             this.seleccionDeSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carteleraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.peliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.peliculasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.trabajadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.finanzasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -76,7 +76,7 @@
             this.registroToolStripMenuItem,
             this.peliculasToolStripMenuItem,
             this.salirToolStripMenuItem});
-            this.ventaDeBoletosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ventaDeBoletosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.ventaDeBoletosToolStripMenuItem.Name = "ventaDeBoletosToolStripMenuItem";
             this.ventaDeBoletosToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
             this.ventaDeBoletosToolStripMenuItem.Text = "Venta de Boletos";
@@ -106,6 +106,15 @@
             this.carteleraToolStripMenuItem.Name = "carteleraToolStripMenuItem";
             this.carteleraToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.carteleraToolStripMenuItem.Text = "Cartelera";
+            // 
+            // registroToolStripMenuItem
+            // 
+            this.registroToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.registroToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.registroToolStripMenuItem.Text = "Registro";
+            this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
             // 
             // peliculasToolStripMenuItem
             // 
@@ -163,6 +172,16 @@
             this.finanzasToolStripMenuItem.Name = "finanzasToolStripMenuItem";
             this.finanzasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.finanzasToolStripMenuItem.Text = "Finanzas";
+            this.finanzasToolStripMenuItem.Click += new System.EventHandler(this.finanzasToolStripMenuItem_Click);
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clientesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // toolStrip
             // 
@@ -204,24 +223,6 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(96, 17);
             this.toolStripStatusLabel.Text = "Cinema Mellrose";
-            // 
-            // registroToolStripMenuItem
-            // 
-            this.registroToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.registroToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
-            this.registroToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.registroToolStripMenuItem.Text = "Registro";
-            this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
-            // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clientesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 

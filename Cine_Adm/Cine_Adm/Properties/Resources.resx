@@ -145,17 +145,29 @@
   <data name="N14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Film" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Film.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="N141" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N141.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="15315155-Etichetta-vintage-su-sfondo-grunge-con-raggi-colorati-Archivio-Fotografico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\15315155-Etichetta-vintage-su-sfondo-grunge-con-raggi-colorati-Archivio-Fotografico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="26783932-A-retro-circus-background-for-a-poster-Stock-Vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\26783932-A-retro-circus-background-for-a-poster-Stock-Vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VbcFXzOy.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VbcFXzOy.jpg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="40557025-Garabatos-de-cine-iconos-conjunto-de-vectores-en-el-estilo-de-dibujo-Foto-de-archivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\40557025-Garabatos-de-cine-iconos-conjunto-de-vectores-en-el-estilo-de-dibujo-Foto-de-archivo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="seat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grunge-circus-background-illustration_110725070" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grunge-circus-background-illustration_110725070.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seat2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seat2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="N1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,19 +175,13 @@
   <data name="aqua-button_t1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aqua-button_t1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grunge-circus-background-illustration_110725070" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grunge-circus-background-illustration_110725070.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="15315155-Etichetta-vintage-su-sfondo-grunge-con-raggi-colorati-Archivio-Fotografico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\15315155-Etichetta-vintage-su-sfondo-grunge-con-raggi-colorati-Archivio-Fotografico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="26783932-A-retro-circus-background-for-a-poster-Stock-Vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\26783932-A-retro-circus-background-for-a-poster-Stock-Vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="40557025-Garabatos-de-cine-iconos-conjunto-de-vectores-en-el-estilo-de-dibujo-Foto-de-archivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\40557025-Garabatos-de-cine-iconos-conjunto-de-vectores-en-el-estilo-de-dibujo-Foto-de-archivo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="seat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seat2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seat2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="B17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\B17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
