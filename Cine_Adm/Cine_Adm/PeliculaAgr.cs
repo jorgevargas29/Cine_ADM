@@ -17,7 +17,7 @@ namespace Cine_Adm
     {
         
         string sql;
-            string conexion = "Data Source=JORGE-PC\\SQLEXPRESS;Initial Catalog=CINE;Integrated Security=True;";
+            string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
             DataTable dt;
          SqlConnection sqlconn;
          SqlDataAdapter sqlda;
@@ -83,23 +83,24 @@ namespace Cine_Adm
         }
         public void GuardarImagen()
         {
-            //SaveFileDialog Guardar = new SaveFileDialog();
-            //Guardar.Filter = "JPEG(*.jpg)|*.jpg|BMP(*.bmp)|*.BMP";
-            //Image Imagen = pictureBox1.Image;
-            //Guardar.ShowDialog();
-            //Imagen.Save(Guardar.FileName);
+            SaveFileDialog Guardar = new SaveFileDialog();
+            Guardar.Filter = "JPEG(*.jpg)|*.jpg|BMP(*.bmp)|*.BMP";
+            Image Imagen = pictureBox1.Image;
+            Guardar.ShowDialog();
+            Imagen.Save(Guardar.FileName);
             {
                 // Be sure that you use an appropriate escape sequence (such as the 
                 // @) when specifying the location of the file.
-                System.Drawing.Image myImage = Image.FromFile
-                (System.Environment.GetFolderPath
-                (System.Environment.SpecialFolder.Personal)
-                + @"../../Source/Posters/");
+                //System.Drawing.Image myImage = Image.FromFile
+                //(System.Environment.GetFolderPath
+                //(System.Environment.SpecialFolder.Personal)
+                //+ @"../../Source/Posters/");
                 //imageList1.Images.Add(myImage);
             }
         }
         private void bGuardar_Click(object sender, EventArgs e)
         {
+            textBox1.Enabled = false;
             try
             {
                 System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(conexion);
@@ -107,7 +108,7 @@ namespace Cine_Adm
 
                 // Estableciento propiedades
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO PELICULA VALUES (@ID_PELICULA, @PL_TITULO, @PL_IDIOMA, @PL_CLASIFICACION, @PL_DURACION,@PL_GENERO,@PL_SINOPSIS,@PL_DIRECTOR,@PL_IMAGEN)";
+                cmd.CommandText = "INSERT INTO PELICULA VALUES ( @PL_IDIOMA, @PL_CLASIFICACION, @PL_DURACION,@PL_GENERO,@PL_SINOPSIS,@PL_DIRECTOR,@PL_IMAGEN)";
 
                 // Creando los parámetros necesarios
                 cmd.Parameters.Add("@ID_PELICULA", System.Data.SqlDbType.Int);
@@ -148,14 +149,7 @@ namespace Cine_Adm
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 MessageBox.Show("Registro Guardado Correctamente");
-                this.textBox1.Text = "";
-                this.textBox2.Text = "";
-                this.textBox3.Text = "";
-                this.textBox4.Text = "";
-                this.textBox5.Text = "";
-                this.textBox6.Text = "";
-                this.textBox7.Text = "";
-                this.textBox8.Text = "";
+                limpiar();
               
                
             }
@@ -167,7 +161,10 @@ namespace Cine_Adm
 
         private void button3_Click(object sender, EventArgs e)
         {
+           
+            
             sqlconn.Open();
+            textBox1.Enabled = true;
             sqlcomm = new SqlCommand();
             string sql;
             DataTable dt = new DataTable();
@@ -195,12 +192,14 @@ namespace Cine_Adm
             sqlda.Fill(dt);
             sqlconn.Close();
             dataGridView1.DataSource = dt;
+            limpiar();
 
 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            
             sqlconn.Open();
             sqlcomm = new SqlCommand();
             string sql;
@@ -226,6 +225,7 @@ namespace Cine_Adm
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             sqlconn.Open();
             sqlcomm = new SqlCommand();
             string sql;
@@ -245,7 +245,18 @@ namespace Cine_Adm
             sqlda.Fill(dt);
             sqlconn.Close();
             dataGridView1.DataSource = dt;
+            limpiar();
         }
-
+        private void limpiar()
+        {
+            this.textBox1.Text = "";
+            this.textBox2.Text = "";
+            this.textBox3.Text = "";
+            this.textBox4.Text = "";
+            this.textBox5.Text = "";
+            this.textBox6.Text = "";
+            this.textBox7.Text = "";
+            this.textBox8.Text = "";
+        }
     }
 }

@@ -29,6 +29,9 @@ namespace Cine_Adm
         }
         private void usuario_compra_Load(object sender, EventArgs e)
         {
+            CargarItemsCombobox c = new CargarItemsCombobox();
+            c.llenaritemH(comboBox2);
+
             string sql;
             string conexion = "Data Source=USER;Initial Catalog=CINE;Integrated Security=True;";
             DataTable dt = new DataTable();

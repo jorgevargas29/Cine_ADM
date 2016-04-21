@@ -74,7 +74,23 @@ namespace Cine_Adm
 
        }
 
+       public void llenaritemH(ComboBox cb)
+       {
+           try
+           {
+               sqlcomm = new SqlCommand("select FN_HORARIO from PPROYECCIO", sqlconn);
+               sqldr = sqlcomm.ExecuteReader();
+               while (sqldr.Read())
+               {
+                   cb.Items.Add(sqldr["FN_HORARIO"].ToString());
+               } sqldr.Close();
+           }
+           catch (Exception e)
+           {
 
+           }
+
+       }
 
     }
     }

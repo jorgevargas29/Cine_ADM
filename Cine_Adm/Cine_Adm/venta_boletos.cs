@@ -39,6 +39,7 @@ namespace Cine_Adm
         {
             CargarItemsCombobox c = new CargarItemsCombobox();
             c.llenaritemP(comboBox1);
+            c.llenaritemH(comboBox2);
 
         }
       

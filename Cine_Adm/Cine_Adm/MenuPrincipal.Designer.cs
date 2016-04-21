@@ -48,6 +48,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.asientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -141,7 +142,8 @@
             this.peliculasToolStripMenuItem1,
             this.trabajadoresToolStripMenuItem,
             this.finanzasToolStripMenuItem,
-            this.clientesToolStripMenuItem});
+            this.clientesToolStripMenuItem,
+            this.asientosToolStripMenuItem});
             this.mantenimientoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
@@ -224,6 +226,14 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(96, 17);
             this.toolStripStatusLabel.Text = "Cinema Mellrose";
             // 
+            // asientosToolStripMenuItem
+            // 
+            this.asientosToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.asientosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.asientosToolStripMenuItem.Name = "asientosToolStripMenuItem";
+            this.asientosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.asientosToolStripMenuItem.Text = "Asientos";
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,6 +280,7 @@
         public System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asientosToolStripMenuItem;
     }
 }
 
